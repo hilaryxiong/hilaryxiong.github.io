@@ -18,7 +18,7 @@ jobs:
       with:
         sparse-checkout: |
           README.md
-        sparse-checkout-cone-mode: false
+        sparse-checkout-cone-mode: true
     - name: where am I
       run: pwd
     - name: whoami
