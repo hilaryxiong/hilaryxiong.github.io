@@ -18,6 +18,7 @@ jobs:
       with:
         sparse-checkout: |
           README.md
+          .github/workflows/testOut.yml
         sparse-checkout-cone-mode: true
     - name: where am I
       run: pwd
