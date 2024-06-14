@@ -18,7 +18,7 @@ jobs:
       with:
         sparse-checkout: |
           README.md
-          .github/workflows/testOut.yml
+   #       .github/workflows/testOut.yml
         sparse-checkout-cone-mode: true
     - name: where am I
       run: pwd
@@ -26,5 +26,5 @@ jobs:
       run: whoami
     - name: list
       run: ls -la
-    - name: list deep
-      run: ls -la .github/workflows
+#    - name: list deep
+#      run: ls -la .github/workflows
