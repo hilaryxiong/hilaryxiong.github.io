@@ -18,7 +18,7 @@ jobs:
       with:
         sparse-checkout: |
           tmp.txt
-          .github/workflows/getOut.yml
+          .github/workflows/testOut.yml
         sparse-checkout-cone-mode: true
 #    - uses: actions/checkout@v4
 #      with:
@@ -32,6 +32,4 @@ jobs:
     - name: list
       run: ls -la
     - name: list deep
-      run: ls -la testProjects/csv
-    - name: list deep again
-      run: ls -la programs
+      run: ls -la .github/workflows
