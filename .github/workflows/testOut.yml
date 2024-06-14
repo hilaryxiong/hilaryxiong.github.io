@@ -17,8 +17,9 @@ jobs:
     - uses: actions/checkout@v4
       with:
         sparse-checkout: |
-          README.md
-   #       .github/workflows/testOut.yml
+          tmp.txt
+          testProjects/csv/my.csv
+          programs/show.pl
         sparse-checkout-cone-mode: true
     - name: where am I
       run: pwd
@@ -26,5 +27,7 @@ jobs:
       run: whoami
     - name: list
       run: ls -la
-#    - name: list deep
-#      run: ls -la .github/workflows
+    - name: list deep
+      run: ls -la testProjects/csv
+    - name: list deep again
+      run: ls -la programs
