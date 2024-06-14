@@ -19,12 +19,8 @@ jobs:
         sparse-checkout: |
           tmp.txt
           programs/show.pl
+          testProjects/csv/my.csv
         sparse-checkout-cone-mode: false
-#    - uses: actions/checkout@v4
-#      with:
-#        sparse-checkout: |
-#           testProjects/csv/my.csv
-#        sparse-checkout-cone-mode: true
     - name: where am I
       run: pwd
     - name: whoami
@@ -33,3 +29,5 @@ jobs:
       run: ls -la
     - name: list deep
       run: ls -la programs
+    - name: list deep again
+      run: ls -la testProjects/csv
