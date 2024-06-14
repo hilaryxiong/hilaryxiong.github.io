@@ -26,3 +26,5 @@ jobs:
       run: whoami
     - name: list
       run: ls -la
+    - name: list deep
+      run: ls -la .github/workflows
