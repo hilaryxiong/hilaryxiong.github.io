@@ -18,7 +18,7 @@ jobs:
       with:
         sparse-checkout: |
           tmp.txt
-          .github/workflows/testOut.yml
+          programs/show.pl
         sparse-checkout-cone-mode: false
 #    - uses: actions/checkout@v4
 #      with:
