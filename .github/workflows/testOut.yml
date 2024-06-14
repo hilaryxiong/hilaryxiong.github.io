@@ -19,11 +19,11 @@ jobs:
         sparse-checkout: |
           tmp.txt
         sparse-checkout-cone-mode: true
-    - uses: actions/checkout@v4
-      with:
-        sparse-checkout: |
-           testProjects/csv/my.csv
-        sparse-checkout-cone-mode: true
+#    - uses: actions/checkout@v4
+#      with:
+#        sparse-checkout: |
+#           testProjects/csv/my.csv
+#        sparse-checkout-cone-mode: true
     - uses: actions/checkout@v4
       with:
         sparse-checkout: |
