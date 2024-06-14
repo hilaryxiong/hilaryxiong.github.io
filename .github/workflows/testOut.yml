@@ -32,4 +32,4 @@ jobs:
     - name: list
       run: ls -la
     - name: list deep
-      run: ls -la .github/workflows
+      run: ls -la programs
