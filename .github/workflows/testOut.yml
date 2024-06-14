@@ -25,4 +25,4 @@ jobs:
     - name: whoami
       run: whoami
     - name: list
-      run: ls -lrt
+      run: ls -la
